@@ -204,6 +204,10 @@ table {
     width: 1200px;
     margin-bottom: 32px;
 }
+.footer li a {
+    text-decoration: none;
+    color: #fff;
+}
 .icon-wrap {
     display: flex;
     justify-content: space-between;
