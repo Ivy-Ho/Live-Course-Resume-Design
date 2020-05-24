@@ -14,9 +14,9 @@
         <div class="content">
             <div class="profile container mb-72">
                 <img class="person-img" src="img/person-img.png" alt="person-img">
-                <h2 class="title">個人資料 <span>PROFILE</span> </h2>
+                <h2 class="title" data-aos="fade-left">個人資料 <span>PROFILE</span> </h2>
                 <ul>
-                    <li class="education-item">
+                    <li class="education-item" data-aos="fade-left">
                         <p class="mb-24">
                             陳九安 Joanne Chen <br>
                             1997- <br>
@@ -31,12 +31,12 @@
                 </ul>
             </div>
             <div class="education container mb-72">
-                <h2 class="title">學歷 <span>EDUCATION</span></h2>
+                <h2 class="title" data-aos="fade-left">學歷 <span>EDUCATION</span></h2>
                 <ul>
-                    <li class="education-item timeLine">
+                    <li class="education-item timeLine" data-aos="fade-left">
                         國立六角師範大學 視覺設計學系 學士學位 | 2016-2020
                     </li>
-                    <li class="education-item">
+                    <li class="education-item" data-aos="fade-left">
                         國立六角高級中學 美術班 | 2013-2016
                     </li>
                 </ul>
@@ -45,13 +45,13 @@
                 <div class="skillBox style-primary">
                     <h2 class="title">技能 SKILLS</h2>
                     <ul>
-                        <li>Adobe Photoshop</li>
-                        <li>Adobe Illustrator</li>
-                        <li>Adobe XD</li>
-                        <li>Adobe Indesign</li>
-                        <li>C4D</li>
-                        <li>Adobe Premiere</li>
-                        <li>語言：中文、英文</li>
+                        <li data-aos="fade-left">Adobe Photoshop</li>
+                        <li data-aos="fade-left">Adobe Illustrator</li>
+                        <li data-aos="fade-left">Adobe XD</li>
+                        <li data-aos="fade-left">Adobe Indesign</li>
+                        <li data-aos="fade-left">C4D</li>
+                        <li data-aos="fade-left">Adobe Premiere</li>
+                        <li data-aos="fade-left">語言：中文、英文</li>
                     </ul>
                 </div>
                 <div class="back-box"></div>
@@ -59,7 +59,7 @@
             <div class="experience container mb-72">
                 <h2 class="title">工作經驗 <span>WORK EXPERIENCE</span></h2>
                 <ul>
-                    <li>
+                    <li data-aos="fade-left">
                         六角學院 視覺設計實習生 | 2019/07-2020/06
                         <img class="logo-img" src="img/hexschool-logo.svg" alt="hexschool-logo">
                         <p>
@@ -70,10 +70,10 @@
                             案- RWD官方網站設計，並設計各式網頁活動宣傳圖。
                         </p>
                     </li>
-                    <li>獨立接案 Hao Jun 酒標設計 | 2019</li>
-                    <li>獨立接案 Exulans 酒標設計 | 2019</li>
-                    <li>獨立接案 桃園平鎮市民健走活動提案 | 2019</li>
-                    <li>
+                    <li data-aos="fade-left">獨立接案 Hao Jun 酒標設計 | 2019</li>
+                    <li data-aos="fade-left">獨立接案 Exulans 酒標設計 | 2019</li>
+                    <li data-aos="fade-left">獨立接案 桃園平鎮市民健走活動提案 | 2019</li>
+                    <li data-aos="fade-left">
                         Simtree 興趣咖啡 工讀生 | 2018－2019
                         <img class="logo-img" src="img/simtree-log.png" alt="simtree-logo">
                         <p>擔任外場及吧台服務生，學習咖啡相關知識。</p>
@@ -96,5 +96,32 @@
             </div>
         </div>
     </div>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 400, // values from 0 to 3000, with step 50ms
+                easing: 'ease', // default easing for AOS animations
+                once: true, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+            });
+    </script>
 </body>
 </html>
