@@ -1,0 +1,38 @@
+// components start
+
+//time line
+.dot::before{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #96A9C4;
+  border-radius: 50%;
+  left: -1em;
+/*   讓原點對齊的方法! */
+  transform: translateY(50%);  
+}
+
+.timeline::after{
+  content: "";
+  position: absolute;
+  border-left: 1px solid #96A9C4;
+  top: 8px;
+  bottom: 12px;
+  left: -16px;
+}
+
+.secondary-background::before {
+    content: "";
+    position: absolute;
+    // display: block;
+    right: 0;
+    left: 0;
+    top: 70px;
+    bottom: 64px;
+    background-color: #96A9C4;
+    z-index: -1;
+}
+
+
+// components end
